@@ -73,8 +73,8 @@ try:
             Lending.transfer_balances()
             Lending.cancel_all()
             Lending.lend_all()
-            log.refreshStatus(Data.stringify_total_lent(*Data.get_total_lent()),
-                              Data.get_max_duration(end_date, "status"))
+            log.refreshStatus(Data.stringify_total_lent(*Data.get_total_lent()), Data.get_max_duration(
+                end_date, "status"))
             log.persistStatus()
             sys.stdout.flush()
             time.sleep(Lending.get_sleep_time())
